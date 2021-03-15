@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Figure from 'react-bootstrap/Figure';
-import Card from 'react-bootstrap/Card';
+import ProjectCard from './ProjectCard'
 import './Summary.css';
 
 const Summary = () => {
@@ -47,54 +47,33 @@ const Summary = () => {
             <h1 className='text-center'>Recent Projects</h1>
             <h4 className='text-center'>A few examples of projects I am fond of</h4>
             <div className='d-flex align-content-stretch flex-wrap'>
-                <Card className='col-lg-6'>
-                    <Card.Img src='https://github.com/oxfordblucher/BikeAble/raw/master/client/src/assets/screenshot.png?raw=true' alt='Application dashboard featuring mapping features'/>
-                    <Card.ImgOverlay>
-                        <Card.Title>BikeAble</Card.Title>
-                        <Card.Text>
-                            <p className='app-summary'>
-                                Prototype social media site geared towards hobbyist cyclists. Users can map and save routes of their own design, keep abreast of biking-related incidents in their area, and connect with other local users.
-                            </p>
-                            <p className='app-contrib'>
-                                I was team lead; taking charge of overall product design, mapping implementation, and backend logic and security.
-                            </p>
-                        </Card.Text>
-                        <Card.Link href='https://bike-able.herokuapp.com'>Deployed</Card.Link>
-                        <Card.Link href='https://github.com/oxfordblucher/BikeAble'>Repo</Card.Link>
-                    </Card.ImgOverlay>
-                </Card>
-                <Card className='col-lg-6'>
-                    <Card.Img src='https://github.com/oxfordblucher/Personality-Pups/raw/master/app/public/assets/img/screenshot.png' alt='Sample quiz question'/>
-                    <Card.ImgOverlay>
-                        <Card.Title>Personality Pups</Card.Title>
-                        <Card.Text>
-                            <p className='app-summary'>
-                                A personality quiz that matches the user up with certain breeds of dogs. Upon creating an account, the website returns and saves the user's results.
-                            </p>
-                            <p className='app-contrib'>
-                                I created the algorithm behind the quiz and was in charge of backend logic and security along with some UX elements.
-                            </p>
-                        </Card.Text>
-                        <Card.Link href='https://personality-pups.herokuapp.com'>Deployed</Card.Link>
-                        <Card.Link href='https://github.com/oxfordblucher/Personality-Pups'>Repo</Card.Link>
-                    </Card.ImgOverlay>
-                </Card>
-                <Card className='col-lg-6'>
-                    <Card.Img variant='top' src='https://github.com/oxfordblucher/Restaurant-Roulette/raw/main/screenshots/sample_results.png' alt='Sample results page'/>
-                    <Card.ImgOverlay>
-                        <Card.Title>UMEWE</Card.Title>
-                        <Card.Text>
-                            <p className='app-summary'>
-                                A restaurant locator based on the midpoint of 2 locations. Intended for users wishing to meet up at a mutually convenient location; they can also filter by price and distance from said midpoint.
-                            </p>
-                            <p className='app-contrib'>
-                                I was in charge of the routing and search result features, focusing primarily on the application logic.
-                            </p>
-                        </Card.Text>
-                        <Card.Link href='https://personality-pups.herokuapp.com'>Deployed</Card.Link>
-                        <Card.Link href='https://github.com/oxfordblucher/Personality-Pups'>Repo</Card.Link>
-                    </Card.ImgOverlay>
-                </Card>
+                <ProjectCard
+                    projectScreenshot='https://github.com/oxfordblucher/BikeAble/raw/master/client/src/assets/screenshot.png?raw=true'
+                    projectScreenshotAlt='Application dashboard featuring mapping features'
+                    projectTitle='BikeAble'
+                    projectSummary="Prototype social media site geared towards hobbyist cyclists. Users can map and save routes of their own design, keep abreast of biking-related incidents in their area, and connect with other local users."
+                    projectContribution='I was team lead; taking charge of overall product design, mapping implementation, and backend logic and security.'
+                    projectDeploymentLink='https://bike-able.herokuapp.com'
+                    projectCodeLink='https://github.com/oxfordblucher/BikeAble'
+                />
+                <ProjectCard
+                    projectScreenshot='https://github.com/oxfordblucher/Personality-Pups/raw/master/app/public/assets/img/screenshot.png'
+                    projectScreenshotAlt='Sample quiz question'
+                    projectTitle='Personality Pups'
+                    projectSummary="A personality quiz that matches the user up with certain breeds of dogs. Upon creating an account, the website returns and saves the user's results."
+                    projectContribution='I created the algorithm behind the quiz and was in charge of backend logic and security along with some UX elements.'
+                    projectDeploymentLink='https://personality-pups.herokuapp.com'
+                    projectCodeLink='https://github.com/oxfordblucher/Personality-Pups'
+                />
+                <ProjectCard
+                    projectScreenshot='https://github.com/oxfordblucher/Restaurant-Roulette/raw/main/screenshots/sample_results.png'
+                    projectScreenshotAlt='Sample results page'
+                    projectTitle='UMEWE'
+                    projectSummary='A restaurant locator based on the midpoint of 2 locations. Intended for users wishing to meet up at a mutually convenient location; they can also filter by price and distance from said midpoint.'
+                    projectContribution='I was in charge of the routing and search result features, focusing primarily on the application logic.'
+                    projectDeploymentLink='https://personality-pups.herokuapp.com'
+                    projectCodeLink='https://github.com/oxfordblucher/Personality-Pups'
+                />
             </div>
         </Container>
     )
