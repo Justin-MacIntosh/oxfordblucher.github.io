@@ -22,15 +22,16 @@ const Summary = () => {
                     <p>
                         I've been a tinkerer from my preschool legos to zoob in middle school to my desktop computer and commuter bike today. While I've always worked with my hands, I am confident in my problem solving and am ready for the next adventure.
                     </p>
+                    <hr/>
                     <h3 className='mb-3'>My Links:</h3>
-                        <Row>
+                        <Row className='link-row'>
                             <Col>
                                 <a href='mailto:hiuchanhk@gmail.com'><i class='far fa-envelope' style={{ 'font-size': '48px' }}></i></a>
                                 <p>Email</p>
                             </Col>
                             <Col>
                                 <a href='https://www.github.com/oxfordblucher' target='_blank' rel='noreferrer'><i class='fab fa-github' style={{ 'font-size': '48px' }} /></a>
-                                <p>Github</p>
+                                <p>GitHub</p>
                             </Col>
                             <Col>
                                 <a href='https://www.linkedin.com/in/hiu-chan-37b116114' target='_blank' rel='noreferrer'><i class='fab fa-linkedin' style={{ 'font-size': '48px' }} /></a>
@@ -43,9 +44,9 @@ const Summary = () => {
                         </Row>
                 </Col>
             </Row>
-            <br />
+            <hr/>
             <h1 className='text-center'>Recent Projects</h1>
-            <h4 className='text-center'>A few examples of projects I am fond of</h4>
+            <br/>
             <div className='d-flex align-content-stretch flex-wrap'>
                 <ProjectCard
                     projectScreenshot='https://github.com/oxfordblucher/BikeAble/raw/master/client/src/assets/screenshot.png?raw=true'

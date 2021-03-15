@@ -1,7 +1,7 @@
 .card-img-overlay {
     opacity: 0;
-    background-color: mediumspringgreen;
-    color: blue;
+    color: #E0E0E0;
+    background-color:#505050;
     text-align: center;
 }
 
@@ -21,4 +21,11 @@ div.col-lg-6 {
 
 div.col-lg-6 h2 {
     text-align: center;
+}
+
+.link-row a {
+    color: #303030;
+}
+.link-row a:hover {
+    color: #707070;
 }
